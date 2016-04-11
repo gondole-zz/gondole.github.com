@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Gondole's Blog]]></title>
+  <subtitle><![CDATA[镜花水月]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://gondole.github.io/"/>
+  <updated>2016-04-08T04:51:31.743Z</updated>
+  <id>http://gondole.github.io/</id>
+  
+  <author>
+    <name><![CDATA[Gondole]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[2016年3月份读书记录]]></title>
+    <link href="http://gondole.github.io/2016/04/08/2016%E5%B9%B43%E6%9C%88%E4%BB%BD%E8%AF%BB%E4%B9%A6%E8%AE%B0%E5%BD%95/"/>
+    <id>http://gondole.github.io/2016/04/08/2016年3月份读书记录/</id>
+    <published>2016-04-08T04:08:51.000Z</published>
+    <updated>2016-04-08T04:51:31.743Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/1374263-e0d2a98dbcd51b0e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>KPW3入手以后，终于能静下心来每天抽出时间来读一些想读的书籍，当然工具书之类的还是买纸质书来放在手边好一些，买书只买一些有必要购买并且有收藏价值以便反复阅读琢磨的书籍。中亚kindle电子书店购买了一些书籍，另外利用calibre软件整理了一些在读远、readfree.me上收集下来的一些书籍，电子书是屯了很多，需要修正这个毛病，还是看书为主吧。月末的周末会整理一下当月阅读过的书籍以及整理书籍摘要。</p>
+<p>三月份阅读书籍记录：  </p>
+<ol>
+<li>读书与做人 -季羡林  </li>
+<li>苦才是人生 -索达吉堪布  </li>
+<li>如何阅读一本书 -莫提默  </li>
+<li>从0到1：开启商业与未来的秘密 -彼得蒂尔  </li>
+<li>看见 -柴静  </li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/1374263-e0d2a98dbcd51b0e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" ]]>
+    </summary>
+    
+      <category term="kindle" scheme="http://gondole.github.io/tags/kindle/"/>
+    
+      <category term="读书" scheme="http://gondole.github.io/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+      <category term="读书" scheme="http://gondole.github.io/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Android源码相关]]></title>
+    <link href="http://gondole.github.io/2016/03/24/Android%E6%BA%90%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
+    <id>http://gondole.github.io/2016/03/24/Android源码相关/</id>
+    <published>2016-03-24T05:55:32.000Z</published>
+    <updated>2016-03-25T03:47:26.871Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F03%2F24%2Fwallhaven-329431.jpg" alt=""></p>
+<h2 id="SDK_u81EA_u5E26_u6E90_u7801_u76F8_u5173"><a href="#SDK_u81EA_u5E26_u6E90_u7801_u76F8_u5173" class="headerlink" title="SDK自带源码相关"></a>SDK自带源码相关</h2><p>在开发工具里都可以关联到SDK自带的Source源码，Eclipse和Android Studio方式大概相同，大部分的API都可以找到，少部分的API可能出于安全原因，在Source源码里并不能找到，可以到AOSP里去寻找更详细的源码，这些隐藏的API方法也可以通过反射的方式来进行调用。</p>
+<h2 id="AOSP"><a href="#AOSP" class="headerlink" title="AOSP"></a>AOSP</h2><p><a href="https://android.googlesource.com/" target="_blank" rel="external">AOSP</a> 包含了Google开源的很多源码，过于庞大，对于一般开发者来说，我们只需要接触Framework层次的东西就够了，这里包括了base、build-tools、support包甚至Volley项目的源码。</p>
+<a id="more"></a>
+<h2 id="u5F00_u59CB_u9605_u8BFB"><a href="#u5F00_u59CB_u9605_u8BFB" class="headerlink" title="开始阅读"></a>开始阅读</h2><ol>
+<li>Handler-Message-Looper</li>
+<li>Activity和Service</li>
+<li>Fragment</li>
+<li>View</li>
+<li>MotionEvent</li>
+<li>LayoutInflator</li>
+<li>SurfaceView和TextureView</li>
+<li>AsyncTask</li>
+<li>Volley</li>
+<li>android.util.*</li>
+</ol>
+<h2 id="u8FDB_u9636_u9605_u8BFB"><a href="#u8FDB_u9636_u9605_u8BFB" class="headerlink" title="进阶阅读"></a>进阶阅读</h2><ol>
+<li>Context</li>
+<li>ClassLoader</li>
+<li>Binder</li>
+<li>WMS，AMS，PMS，NMS，IMS等系统Service</li>
+</ol>
+<h2 id="u5F00_u6E90_u9879_u76EE"><a href="#u5F00_u6E90_u9879_u76EE" class="headerlink" title="开源项目"></a>开源项目</h2><ol>
+<li>EventBus、OTTO （事件总线）</li>
+<li>Volley (网络请求)</li>
+<li>RxJava （异步）</li>
+<li>Guava （核心基础类库）</li>
+</ol>
+<h2 id="u4E00_u4E9B_u5927_u795E_u548C_u8D44_u6E90"><a href="#u4E00_u4E9B_u5927_u795E_u548C_u8D44_u6E90" class="headerlink" title="一些大神和资源"></a>一些大神和资源</h2><ol>
+<li><a href="https://source.android.com/source/index.html" target="_blank" rel="external">AOSP官方的介绍</a></li>
+<li><a href="https://developer.android.com/training/index.html" target="_blank" rel="external">官方教程</a>、<a href="http://android-developers.blogspot.sg/" target="_blank" rel="external">官方博客</a></li>
+<li><a href="http://blog.csdn.net/luoshengyang" target="_blank" rel="external">老罗的Android之旅</a></li>
+<li><a href="http://blog.csdn.net/innost" target="_blank" rel="external">Innost的专栏</a></li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F03%2F24%2Fwallhaven-329431.jpg" alt=""></p>
+<h2 id="SDK_u81EA_u5E26_u6E90_u7801_u76F8_u5173"><a href="#SDK_u81EA_u5E26_u6E90_u7801_u76F8_u5173" class="headerlink" title="SDK自带源码相关"></a>SDK自带源码相关</h2><p>在开发工具里都可以关联到SDK自带的Source源码，Eclipse和Android Studio方式大概相同，大部分的API都可以找到，少部分的API可能出于安全原因，在Source源码里并不能找到，可以到AOSP里去寻找更详细的源码，这些隐藏的API方法也可以通过反射的方式来进行调用。</p>
+<h2 id="AOSP"><a href="#AOSP" class="headerlink" title="AOSP"></a>AOSP</h2><p><a href="https://android.googlesource.com/">AOSP</a> 包含了Google开源的很多源码，过于庞大，对于一般开发者来说，我们只需要接触Framework层次的东西就够了，这里包括了base、build-tools、support包甚至Volley项目的源码。</p>]]>
+    
+    </summary>
+    
+      <category term="Android" scheme="http://gondole.github.io/tags/Android/"/>
+    
+      <category term="源码" scheme="http://gondole.github.io/tags/%E6%BA%90%E7%A0%81/"/>
+    
+      <category term="Android" scheme="http://gondole.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[书摘：季羡林-读书与做人]]></title>
+    <link href="http://gondole.github.io/2016/03/20/%E4%B9%A6%E6%91%98%EF%BC%9A%E8%AF%BB%E4%B9%A6%E4%B8%8E%E5%81%9A%E4%BA%BA/"/>
+    <id>http://gondole.github.io/2016/03/20/书摘：读书与做人/</id>
+    <published>2016-03-20T02:08:03.000Z</published>
+    <updated>2016-03-20T07:40:38.819Z</updated>
+    <content type="html"><![CDATA[<ol>
+<li><p>做人要老实，学外语也要老实。学外语没有什么万能的窍门。俗语说：“书山有路勤为径，学海无涯苦作舟。”这就是窍门。</p>
+</li>
+<li><p>我在上述两篇千字文中提出的意见，归纳起来，不出以下诸端：第一，要尽快接触原文，不要让语法缠住手脚，语法在接触原文过程中逐步深化。第二，天资与勤奋都需要，而后者占绝大的比重。第三，不要妄想捷径，外语中没有“御道”。  </p>
+</li>
+<li><p>我平生最羡慕两种人：一个是画家，一个是音乐家。而这两种艺术是最需天才的，没有天赋而勉强对付，决无成就。可是造化小儿偏偏跟我开玩笑，只赋予我这方面的兴趣，而不赋予我那方面天才。</p>
+</li>
+<li><p>我读书粗略地可以分为两类：一类是细读的，一类是浏览的。</p>
+</li>
+<li><p>少小离家老大回， 乡音无改鬓毛衰。 儿童相见不相识， 笑问客从何处来。<a id="more"></a></p>
+</li>
+<li><p>人生不相见， 动如参与商。 今夕复何夕？ 共此灯烛光。</p>
+</li>
+<li><p>一个人活在世界上，必须处理好三个关系：第一，人与大自然的关系；第二，人与人的关系，包括家庭关系在内；第三，个人心中思想与感情矛盾与平衡的关系。这三个关系，如果能处理得好，生活就能愉快；否则，生活就有苦恼。</p>
+</li>
+<li><p>了解了这一番道理之后，有什么意义呢？我认为，意义是重大的。它能够让我们头脑清醒，理解祸福的辩证关系；走运时，要想到倒霉，不要得意过了头；倒霉时，要想到走运，不必垂头丧气。心态始终保持平衡，情绪始终保持稳定，此亦长寿之道也。</p>
+</li>
+<li><p>总之，谦虚是美德，但必须掌握分寸，注意东西。在东方谦虚涵盖的范围广，不能施之于西方，此不可不注意者。然而，不管东方或西方，必须出之以真诚。有意的过分的谦虚就等于虚伪。</p>
+</li>
+<li><p>Patience is the-great virtue（容忍是很大的美德）。</p>
+</li>
+<li><p>王静安在《人间词话》中说：“古今之成大事业大学问者必经过三种之境界。‘昨夜西风凋碧树，独上高楼，望尽天涯路’。此第一境也。‘衣带渐宽终不悔，为伊消得人憔悴’。此第二境也。‘众里寻他千百度，回头蓦见，那人正在，灯火阑珊处’。此第三境也。”静安先生第一境写的是预期，第二境写的是勤奋，第三境写的是成功。其中没有写天资和机遇。我不敢说，这是他的疏漏，因为写的角度不同。但是，我认为，补上天资与机遇，似更为全面。我希望，大家都能拿出“衣带渐宽终不悔”的精神来从事做学问或干事业，这是成功的必由之路。</p>
+</li>
+<li><p>“知足知不足，有为有不为。”</p>
+</li>
+<li><p>压力如何排除呢？粗略来分类，压力来源可能有两类：一被动，一主动。天灾人祸，意外事件，属于被动，这种压力，无法预测，只有泰然处之，切不可杞人忧天。主动的来源于自身，自己能有所作为。我的“三不主义”的第三条是“不嘀咕”，我认为，能做到遇事不嘀咕，就能排除自己造成的压力。</p>
+</li>
+<li><p>最后，我想当一个文抄公，抄一段香港《公正报》上的话： 富者有礼高质，贫者有礼免辱，父子有礼慈孝，兄弟有礼和睦，夫妻有礼情长，朋友有礼义笃，社会有礼祥和。</p>
+</li>
+<li><p>少年易老学难成， 一寸光阴不可轻。 未觉池塘春草梦， 阶前梧叶已秋声。</p>
+</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ol>
+<li><p>做人要老实，学外语也要老实。学外语没有什么万能的窍门。俗语说：“书山有路勤为径，学海无涯苦作舟。”这就是窍门。</p>
+</li>
+<li><p>我在上述两篇千字文中提出的意见，归纳起来，不出以下诸端：第一，要尽快接触原文，不要让语法缠住手脚，语法在接触原文过程中逐步深化。第二，天资与勤奋都需要，而后者占绝大的比重。第三，不要妄想捷径，外语中没有“御道”。  </p>
+</li>
+<li><p>我平生最羡慕两种人：一个是画家，一个是音乐家。而这两种艺术是最需天才的，没有天赋而勉强对付，决无成就。可是造化小儿偏偏跟我开玩笑，只赋予我这方面的兴趣，而不赋予我那方面天才。</p>
+</li>
+<li><p>我读书粗略地可以分为两类：一类是细读的，一类是浏览的。</p>
+</li>
+<li><p>少小离家老大回， 乡音无改鬓毛衰。 儿童相见不相识， 笑问客从何处来。]]>
+    
+    </summary>
+    
+      <category term="书摘" scheme="http://gondole.github.io/tags/%E4%B9%A6%E6%91%98/"/>
+    
+      <category term="阅读" scheme="http://gondole.github.io/tags/%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="读书" scheme="http://gondole.github.io/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[书摘：如何阅读一本书]]></title>
+    <link href="http://gondole.github.io/2016/03/20/%E4%B9%A6%E6%91%98%EF%BC%9A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6/"/>
+    <id>http://gondole.github.io/2016/03/20/书摘：如何阅读一本书/</id>
+    <published>2016-03-20T01:43:07.000Z</published>
+    <updated>2016-04-07T08:26:42.830Z</updated>
+    <content type="html"><![CDATA[<p>了解一下大概的阅读方法，不过感觉很多书也只需检测阅读就足够了吧。</p>
+<p>基础阅读</p>
+<p>检视阅读一：有系统的略读或粗读。  </p>
+<ul>
+<li>先看书名页，然后如果有序就先看序。要很快地看过去。特别注意副标题，或其他的相关说明或宗旨，或是作者写作本书的特殊角度。  </li>
+<li>研究目录页，对这本书的基本架构做概括性的理解。  </li>
+<li>如果书中附有索引，也要检阅一下-大多数论说类的书籍都会有索引。快速评估一下这本书涵盖了哪些议题的范围，以及所提到的书籍种类与作者等等。  </li>
+<li>如果那是本包着书衣的新书，不妨读一下出版者的介绍。  <a id="more"></a></li>
+</ul>
+<p>检视阅读二：粗浅的阅读</p>
+<ul>
+<li>头一次面对一本难读的书的时候，从头到尾先读完一遍，碰到不懂的地方不要停下来查询或思索。</li>
+<li>所谓阅读速度，理想上来说，不只是要能读得快，还要能用不同的速度来阅读-要知道什么时候用什么样的速度是恰当的。  </li>
+<li>每一本书，不论是多么难读的书，在无关紧要的间隙部分就可以读快一点。而一本好书，总会包含一些比较困难，应该慢慢阅读的内容。  </li>
+</ul>
+<p>关于该书：  </p>
+<ul>
+<li>整体来说，这本书到底在谈些什么？  </li>
+<li>作者细部说了什么，怎么说的？  </li>
+<li>这本书说得有道理吗？  </li>
+<li>这本书跟你有什么关系？  </li>
+</ul>
+<p>任何一种超越基础阅读的阅读层次，核心就在你要努力提出问题（然后尽你可能地找出答案）。这是绝不可或忘的原则。</p>
+<p>俗话说：”你必须读出言外之意，才会有更大的收获。”  </p>
+<p>在检视阅读中，要回答的问题是：</p>
+<ul>
+<li>第一，这是什么样的一本书？  </li>
+<li>第二，整本书在谈的是什么？  </li>
+<li>第三，作者是借着怎样的整体架构，来发展他的观点或陈述他对这个主题的理解？  </li>
+</ul>
+<p>最后两个高级阅读方法：</p>
+<ul>
+<li>分析阅读  </li>
+<li>主题阅读  </li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>了解一下大概的阅读方法，不过感觉很多书也只需检测阅读就足够了吧。</p>
+<p>基础阅读</p>
+<p>检视阅读一：有系统的略读或粗读。  </p>
+<ul>
+<li>先看书名页，然后如果有序就先看序。要很快地看过去。特别注意副标题，或其他的相关说明或宗旨，或是作者写作本书的特殊角度。  </li>
+<li>研究目录页，对这本书的基本架构做概括性的理解。  </li>
+<li>如果书中附有索引，也要检阅一下-大多数论说类的书籍都会有索引。快速评估一下这本书涵盖了哪些议题的范围，以及所提到的书籍种类与作者等等。  </li>
+<li>如果那是本包着书衣的新书，不妨读一下出版者的介绍。]]>
+    
+    </summary>
+    
+      <category term="书摘" scheme="http://gondole.github.io/tags/%E4%B9%A6%E6%91%98/"/>
+    
+      <category term="阅读" scheme="http://gondole.github.io/tags/%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="读书" scheme="http://gondole.github.io/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[申请个人域名记录]]></title>
+    <link href="http://gondole.github.io/2016/02/22/%E7%94%B3%E8%AF%B7%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%E8%AE%B0%E5%BD%95/"/>
+    <id>http://gondole.github.io/2016/02/22/申请个人域名记录/</id>
+    <published>2016-02-22T01:41:01.000Z</published>
+    <updated>2016-02-23T03:48:44.105Z</updated>
+    <content type="html"><![CDATA[<p>折腾了GHPage之后，就随手在godaddy申请了一个域名，并且绑定了github.io的个人page。</p>
+<h3 id="u57DF_u540D_u7533_u8BF7"><a href="#u57DF_u540D_u7533_u8BF7" class="headerlink" title="域名申请"></a>域名申请</h3><ol>
+<li>在godaddy上搜索可用的域名。</li>
+<li>结账时可以选用优惠码减少使用费。</li>
+<li>支付宝支付，方便快捷。</li>
+</ol>
+<a id="more"></a>
+<h3 id="u66F4_u6362_u57DF_u540D_u670D_u52A1_u5668"><a href="#u66F4_u6362_u57DF_u540D_u670D_u52A1_u5668" class="headerlink" title="更换域名服务器"></a>更换域名服务器</h3><ol>
+<li>可以选用替换为国内DNSPOD的域名服务器。</li>
+<li>设置godaddy域名的域名服务器设置类型为：定制。</li>
+<li>F1G1NS1.DNSPOD.NET, F1G1NS2.DNSPOD.NET。</li>
+</ol>
+<h3 id="u6DFB_u52A0CNAME"><a href="#u6DFB_u52A0CNAME" class="headerlink" title="添加CNAME"></a>添加CNAME</h3><ol>
+<li>在你的github.page的repo根目录下添加CNAME文件，内容填写为你的域名. eg: gondole.me 无需www。</li>
+</ol>
+<h3 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h3><ol>
+<li>godaddy默认dns对国内不友好，所以可以选择选用国内的DNS，eg：DNSPOD。</li>
+<li>直接添加域名解析，DNSPOD会自动导入域名对应的相关信息。</li>
+<li>添加一条A类型的主机记录，记录值为你username.github.io的ping对应的ip地址 TTL根据ip变动频率来设定不同的大小，推荐 600。</li>
+<li>添加一条CNAME类型的主机路，记录值为username.github.io。</li>
+</ol>
+<h3 id="SSL"><a href="#SSL" class="headerlink" title="SSL"></a>SSL</h3><ol>
+<li>因为是个人博客用，所以选用了StartSSL的SSL证书，免费，一年有效期。</li>
+<li>目测DNSPOD的CDN需要备案并且不支持HTTPS转发…， 回头换一个DNS。</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>折腾了GHPage之后，就随手在godaddy申请了一个域名，并且绑定了github.io的个人page。</p>
+<h3 id="u57DF_u540D_u7533_u8BF7"><a href="#u57DF_u540D_u7533_u8BF7" class="headerlink" title="域名申请"></a>域名申请</h3><ol>
+<li>在godaddy上搜索可用的域名。</li>
+<li>结账时可以选用优惠码减少使用费。</li>
+<li>支付宝支付，方便快捷。</li>
+</ol>]]>
+    
+    </summary>
+    
+      <category term="Godaddy" scheme="http://gondole.github.io/tags/Godaddy/"/>
+    
+      <category term="域名" scheme="http://gondole.github.io/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+      <category term="技术" scheme="http://gondole.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[2016年2月份书单]]></title>
+    <link href="http://gondole.github.io/2016/02/19/2016%E5%B9%B42%E6%9C%88%E4%BB%BD%E4%B9%A6%E5%8D%95/"/>
+    <id>http://gondole.github.io/2016/02/19/2016年2月份书单/</id>
+    <published>2016-02-19T00:41:00.000Z</published>
+    <updated>2016-03-03T03:50:13.067Z</updated>
+    <content type="html"><![CDATA[<ol>
+<li>一只特立独行的猪 （王小波）</li>
+<li>沉默的大多数 （王小波）</li>
+<li>激荡三十年：中国企业1978~2008 （吴晓波）</li>
+<li>黑客与画家 （Paul Graham）</li>
+<li>重说中国近代史 （张鸣）</li>
+</ol>
+<blockquote>
+<p>有人问一位登山家为什么要去登山——谁都知道登山这件事既危险，又没什么实际的好处，他回答道：“因为那座山峰在那里。”我喜欢这个答案，因为里面包含着幽默感——明明是自己想要登山，偏说是山在那里使他心里痒痒。  [一只特立独行的猪] （王小波）</p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ol>
+<li>一只特立独行的猪 （王小波）</li>
+<li>沉默的大多数 （王小波）</li>
+<li>激荡三十年：中国企业1978~2008 （吴晓波）</li>
+<li>黑客与画家 （Paul Graham）</li>
+<li>重说中国近代史 （张鸣）</li>
+</o]]>
+    </summary>
+    
+      <category term="书单" scheme="http://gondole.github.io/tags/%E4%B9%A6%E5%8D%95/"/>
+    
+      <category term="思考" scheme="http://gondole.github.io/tags/%E6%80%9D%E8%80%83/"/>
+    
+      <category term="阅读" scheme="http://gondole.github.io/tags/%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="读书" scheme="http://gondole.github.io/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[我和流沙]]></title>
+    <link href="http://gondole.github.io/2016/02/01/%C2%80%E6%88%91%E5%92%8C%E6%B5%81%E6%B2%99/"/>
+    <id>http://gondole.github.io/2016/02/01/我和流沙/</id>
+    <published>2016-02-01T02:55:11.000Z</published>
+    <updated>2016-02-25T00:59:18.319Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F02%2F01lnnvwit.jpg" alt=""></p>
+<p>这么多年来，一直是我脚下的流沙裹着我四处漂泊，它也不淹没我，它只是时不时提醒我，你没有别的选择，否则你就被风吹走了。我就这么浑浑噩噩地度过了我所有热血的岁月，被裹到东，被裹到西，连我曾经所鄙视的种子都不如。<br><a id="more"></a><br>一直到一周以前，我对流沙说，让风把我吹走吧。</p>
+<p>流沙说，你没了根，马上就死。</p>
+<p>我说，我存够了水，能活一阵子。</p>
+<p>流沙说，但是风会把你无休止地留在空中，你就脱水了。</p>
+<p>我说，我还有雨水。</p>
+<p>流沙说，雨水要流到大地上，才能够积蓄成水塘，它在空中的时候，只是一个装饰品。</p>
+<p>我说，我会掉到水塘里的。</p>
+<p>流沙说，那你就淹死了。</p>
+<p>我说，让我试试吧。</p>
+<p>流沙说，我把你拱到小沙丘上，你低头看看，多少像你这样的植物，都是依附着我们。</p>
+<p>我说，有种你就把我抬得更高一点，让我看看普天下所有的植物，是不是都是像我们这样生活着。</p>
+<p>流沙说，你怎么能反抗我。我要吞没你。</p>
+<p>我说，那我就让西风带走我。</p>
+<p>于是我毅然往上一挣扎，其实也没有费力。我离开了流沙，往脚底下一看，操，原来我不是一棵植物，我是一只动物，这帮孙子骗了我二十多年。作为一个有脚的动物，我终于可以决定我的去向。我回头看了流沙一眼，流沙说，你走吧，别告诉别的植物其实他们是动物。   – 摘抄自： <strong><a href="http://blog.sina.com.cn/s/blog_4701280b0102elmo.html" target="_blank" rel="external">韩寒 1988</a></strong></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F02%2F01lnnvwit.jpg" alt=""></p>
+<p>这么多年来，一直是我脚下的流沙裹着我四处漂泊，它也不淹没我，它只是时不时提醒我，你没有别的选择，否则你就被风吹走了。我就这么浑浑噩噩地度过了我所有热血的岁月，被裹到东，被裹到西，连我曾经所鄙视的种子都不如。<br>]]>
+    
+    </summary>
+    
+      <category term="思考" scheme="http://gondole.github.io/tags/%E6%80%9D%E8%80%83/"/>
+    
+      <category term="随笔" scheme="http://gondole.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[你为何如此焦虑]]></title>
+    <link href="http://gondole.github.io/2016/01/29/%E4%BD%A0%E4%B8%BA%E4%BD%95%E5%A6%82%E6%AD%A4%E7%84%A6%E8%99%91/"/>
+    <id>http://gondole.github.io/2016/01/29/你为何如此焦虑/</id>
+    <published>2016-01-29T00:33:32.000Z</published>
+    <updated>2016-03-18T03:16:45.404Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F01%2F29ltn_890728ee06fd1d1421bf125b35ebbeb020140930085901.jpeg" alt=""></p>
+<blockquote>
+<p>人的一切痛苦，本质上都是对自己无能的愤怒。  <strong>王小波</strong></p>
+</blockquote>
+<p>从某种意义上来说，这句话似乎是正确的。</p>
+<p>做事情太过于急功近利和急于求成，尚未开始便想到马上有结果和好处，通常会导致焦虑心态。<br><a id="more"></a></p>
+<blockquote>
+<p>所有痛苦的感觉都与摆脱痛苦的愿望密不可分，所有快乐的观念都是与享受快乐的愿望分不开。所以，所有愿望全都意味着一种需求，而所有的需求都是痛苦的。因此，我们的痛苦正是产生于我的愿望和能力的不相称。一个有感觉的人，在他的能力扩大到了他的欲望的时候，就将变作一个完完全全快乐的人了。    — 卢梭 『<strong>爱弥儿</strong>』</p>
+</blockquote>
+<p>能力和欲望，是应该好好衡量反思比较一下二者的距离。</p>
+<blockquote>
+<p>人生的苦闷有二：一是欲望没有被满足，二是它得到了满足。— 萧伯纳</p>
+</blockquote>
+<p>虽然平衡很难，但是也要尽量让自己的心态良好，至少不那么极端。</p>
+<blockquote>
+<p>大树有大树的长法;小草有小草的长法;这世上大部分的人，都是小草。你不是孤独的。— 龙应台 『<strong>亲爱的安德烈</strong>』</p>
+</blockquote>
+<p>改变世界很难，可我们可以去改变自己。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F01%2F29ltn_890728ee06fd1d1421bf125b35ebbeb020140930085901.jpeg" alt=""></p>
+<blockquote>
+<p>人的一切痛苦，本质上都是对自己无能的愤怒。  <strong>王小波</strong></p>
+</blockquote>
+<p>从某种意义上来说，这句话似乎是正确的。</p>
+<p>做事情太过于急功近利和急于求成，尚未开始便想到马上有结果和好处，通常会导致焦虑心态。<br>]]>
+    
+    </summary>
+    
+      <category term="思考" scheme="http://gondole.github.io/tags/%E6%80%9D%E8%80%83/"/>
+    
+      <category term="随笔" scheme="http://gondole.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[伸手摘下了]]></title>
+    <link href="http://gondole.github.io/2016/01/26/%E4%BC%B8%E6%89%8B%E6%91%98%E4%B8%8B%E4%BA%86/"/>
+    <id>http://gondole.github.io/2016/01/26/伸手摘下了/</id>
+    <published>2016-01-26T07:14:09.000Z</published>
+    <updated>2016-02-19T01:43:20.807Z</updated>
+    <content type="html"><![CDATA[<p>一首不错的歌：<a href="http://music.163.com/#/song?id=32619801" target="_blank" rel="external"><strong>伸手摘下了</strong> <em>By Lu1</em></a></p>
+<blockquote>
+<p>他喜欢睡前在脑海里反复的演绎<br>设计的人物，对白和点滴<br>拨开梦境的涟漪<br>窥视着这片空间，是虚构但自由的<br>他等待倦意，侵蚀了知觉<br>不介意在抵达之前，晃荡于未知之间<br>这是他的避风港  </p>
+</blockquote>
+<a id="more"></a>
+<blockquote>
+<p>时间是扭曲的<br>毫不犹豫的, 他投身潜入<br>今晚，让想象力为自己点路<br>用黏土搭砌着心灵的岛屿<br>隔离坏心情和遭遇<br>离开现实不远处逃离了很多事<br>无忧无虑真的是对他很奢侈<br>画面多迷幻，多向往的梦<br>醒来gravity pull，就有多少的痛<br>他伸手，摘下了天真的心<br>为自己点路，告诫着自己不能减速<br>他伸手，摘下了叛逆的心<br>留恋着身后，告诫着自己不能回头  </p>
+</blockquote>
+<!-- nothing -->
+<blockquote>
+<p>他脚底有爬不完的阶梯<br>落脚之间也没歇脚的间隙<br>他咽了口怨气，很谨慎怕滑倒<br>他像盘旋在没有尽头的闸道<br>没人帮他擦去汗水<br>There’s only one lane<br>there’s only one way<br>但环境像惯性般，拉扯着你<br>像是跑下坡的他停不下他自己<br>男孩长大了，加重了近视<br>多了些偏见，碰了不少钉子<br>多了些无奈，做了不少违心事<br>他不再相信世界有奇迹<br>他因此沉沦于梦中的世界<br>颓废在梦中的世界<br>习惯了梦中的世界<br>不想离开梦中的世界  </p>
+</blockquote>
+<!-- nothing -->
+<blockquote>
+<p>他伸手，摘下了天真的心<br>为自己点路，告诫着自己不能减速<br>他伸手，摘下了叛逆的心<br>留恋着身后，告诫着自己不能回头  </p>
+</blockquote>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=32619801&auto=0&height=66"></iframe>]]></content>
+    <summary type="html">
+    <![CDATA[<p>一首不错的歌：<a href="http://music.163.com/#/song?id=32619801"><strong>伸手摘下了</strong> <em>By Lu1</em></a></p>
+<blockquote>
+<p>他喜欢睡前在脑海里反复的演绎<br>设计的人物，对白和点滴<br>拨开梦境的涟漪<br>窥视着这片空间，是虚构但自由的<br>他等待倦意，侵蚀了知觉<br>不介意在抵达之前，晃荡于未知之间<br>这是他的避风港  </p>
+</blockquote>]]>
+    
+    </summary>
+    
+      <category term="音乐" scheme="http://gondole.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+      <category term="随笔" scheme="http://gondole.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Android需要关注的一些技术]]></title>
+    <link href="http://gondole.github.io/2016/01/25/Android%E9%9C%80%E8%A6%81%E5%85%B3%E6%B3%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%80%E6%9C%AF/"/>
+    <id>http://gondole.github.io/2016/01/25/Android需要关注的一些技术/</id>
+    <published>2016-01-25T03:59:59.000Z</published>
+    <updated>2016-02-26T00:40:01.840Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F02%2F26%2F1-XwEpgAyjpF0rGhEdUvm_mQ.jpeg" alt=""></p>
+<blockquote>
+<ol>
+<li>DataBinding</li>
+<li>MVP模式</li>
+<li>热修复</li>
+<li>插件化</li>
+<li>RxJava</li>
+<li>RxVolley</li>
+<li>RxBus, RxBinding</li>
+<li>Kotlin语言</li>
+</ol>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F02%2F26%2F1-XwEpgAyjpF0rGhEdUvm_mQ.jpeg" alt=""></p>
+<blockquote>
+<ol>
+<li>DataBin]]>
+    </summary>
+    
+      <category term="Android" scheme="http://gondole.github.io/tags/Android/"/>
+    
+      <category term="开源项目" scheme="http://gondole.github.io/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="Android" scheme="http://gondole.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hexo博客Next主题优化]]></title>
+    <link href="http://gondole.github.io/2016/01/22/Hexo%E5%8D%9A%E5%AE%A2Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/"/>
+    <id>http://gondole.github.io/2016/01/22/Hexo博客Next主题优化/</id>
+    <published>2016-01-22T09:16:30.000Z</published>
+    <updated>2016-04-08T09:59:02.093Z</updated>
+    <content type="html"><![CDATA[<p>目前使用NexT.Pisces主题，优化过程比较零碎，也比较多，在此整理一下。</p>
+<h1 id="u83DC_u5355_u8BBE_u7F6E"><a href="#u83DC_u5355_u8BBE_u7F6E" class="headerlink" title="菜单设置"></a>菜单设置</h1><p>NexT主题菜单设置，用于设置博客上方导航栏，在主题配置文件中修改。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">menu:  </span><br><span class="line">  home: /                       #主页  </span><br><span class="line">  categories: /categories		#分类页（需手动创建）  </span><br><span class="line">  #about: /about				#关于页面（需手动创建）  </span><br><span class="line">  archives: /archives			#归档页  </span><br><span class="line">  tags: /tags					#标签页（需手动创建）  </span><br><span class="line">  #commonweal: /404.html        #公益 404 （需手动创建）</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="u6807_u7B7E_u9875_u9762"><a href="#u6807_u7B7E_u9875_u9762" class="headerlink" title="标签页面"></a>标签页面</h2><pre><code>hexo new page &quot;tags&quot;
+</code></pre><h2 id="u5206_u7C7B_u9875_u9762"><a href="#u5206_u7C7B_u9875_u9762" class="headerlink" title="分类页面"></a>分类页面</h2><pre><code>hexo new page &quot;categories&quot;
+</code></pre><h1 id="u6DFB_u52A0_u535A_u5BA2_u8BBF_u95EE_u91CF_u7EDF_u8BA1"><a href="#u6DFB_u52A0_u535A_u5BA2_u8BBF_u95EE_u91CF_u7EDF_u8BA1" class="headerlink" title="添加博客访问量统计"></a>添加博客访问量统计</h1><p>站点访问计数我使用的是不蒜子，使用非常方便，只需一行脚本+一行标签。</p>
+<h2 id="u663E_u793A_u7AD9_u70B9_u603B_u8BBF_u95EE_u91CF"><a href="#u663E_u793A_u7AD9_u70B9_u603B_u8BBF_u95EE_u91CF" class="headerlink" title="显示站点总访问量"></a>显示站点总访问量</h2><p>我们使用的是hexo，所以要找到网站的布局文件，不同的主题的布局文件可能不一样，下面教程是针对NexT主题做出的修改。</p>
+<p>找到站点的themes/next/layout/_partials目录下的footer.swig文件<br>将以下脚本和标签插入到文件中</p>
+<pre><code>&lt;script async src=&quot;https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;
+
+本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; &amp;nbsp&amp;nbsp&amp;nbsp
+您是第&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;个来到的小伙伴
+</code></pre><p>插入到这里</p>
+<pre><code>&lt;div class=&quot;powered-by&quot;&gt;
+    ...
+  &lt;/a&gt;
+&lt;/div&gt;
+
+插入到这里
+
+
+</code></pre><h2 id="u663E_u793A_u6587_u7AE0_u9605_u8BFB_u6B21_u6570"><a href="#u663E_u793A_u6587_u7AE0_u9605_u8BFB_u6B21_u6570" class="headerlink" title="显示文章阅读次数"></a>显示文章阅读次数</h2><p>因为不蒜子只能统计文章详情页面的阅读次数，在主页面是没法显示的，所以后来换成了leanCloud来进行阅读次数的显示。  </p>
+<ol>
+<li>注册leanCloud，获取到appId和appKey 写入到主题配置文件里。  </li>
+<li>因为Next主题已经集成了相关代码，所以直接部署就生效了。</li>
+</ol>
+<h1 id="u591A_u8BF4_u8BC4_u8BBA"><a href="#u591A_u8BF4_u8BC4_u8BBA" class="headerlink" title="多说评论"></a>多说评论</h1><h2 id="u591A_u8BF4_u521B_u5EFA_u4E2A_u4EBA_u7AD9_u70B9"><a href="#u591A_u8BF4_u521B_u5EFA_u4E2A_u4EBA_u7AD9_u70B9" class="headerlink" title="多说创建个人站点"></a>多说创建个人站点</h2><p>在多说注册并且创建站点并且可以进行相关设置比如默认头像以及自定义CSS评论框样式。</p>
+<h2 id="u4FEE_u6539_u7AD9_u70B9_u914D_u7F6E_u6587_u4EF6"><a href="#u4FEE_u6539_u7AD9_u70B9_u914D_u7F6E_u6587_u4EF6" class="headerlink" title="修改站点配置文件"></a>修改站点配置文件</h2><p>在站点配置文件中增加duoshuo_shortname字段，duoshuo_shortname就是上一步中你填写的值。</p>
+<pre><code>duoshuo_shortname: your_duoshuo_name
+</code></pre><h2 id="u53BB_u9664_u6807_u7B7E_u9875_u8BC4_u8BBA"><a href="#u53BB_u9664_u6807_u7B7E_u9875_u8BC4_u8BBA" class="headerlink" title="去除标签页评论"></a>去除标签页评论</h2><pre><code>title: categories
+date: 2015-09-18 21:46:42
+type: &quot;categories&quot;
+comments: false   #去除多说评论框
+</code></pre><h2 id="u628A_u591A_u8BF4_u8BC4_u8BBA_u4F9D_u8D56_u7684embed-js_u653E_u7F6E_u5E95_u90E8"><a href="#u628A_u591A_u8BF4_u8BC4_u8BBA_u4F9D_u8D56_u7684embed-js_u653E_u7F6E_u5E95_u90E8" class="headerlink" title="把多说评论依赖的embed.js放置底部"></a>把多说评论依赖的embed.js放置底部</h2><p>Yahoo性能中心总结的高性能网站设计的规则提及，把Javascript脚本尽量放到页面底部加载，这里不多说。<br>wordpress多说插件提供了在网页底部插入多说核心脚本embed.js这选项供用户选择，比较人性化。其他博客程序的话可以把embed.js放置到主题的footer底部加载。这里以hexo静态博客程序，NexT.Mist主题举个栗子，这里需要修改的文件是duoshuo.swig，路径是your-hexo-site\themes\next\layout_scripts目录下，将下面一段代码</p>
+<pre><code>(document.getElementsByTagName(&apos;head&apos;)[0]
+</code></pre><p>修改成下面的代码</p>
+<pre><code>(document.getElementById(&apos;footer&apos;)
+</code></pre><h1 id="u6DFB_u52A0_Swiftype__u641C_u7D22"><a href="#u6DFB_u52A0_Swiftype__u641C_u7D22" class="headerlink" title="添加 Swiftype 搜索"></a>添加 Swiftype 搜索</h1><p>按照next的github上的教程配置了半天没生效…， 后来网上搜索到了新版本Swiftype Search的配置方法，注册 Swiftype 后 在安装配置时，复制你的code  </p>
+<pre><code>_st(&apos;install&apos;,&apos;xxxxxxxxxxxxx&apos;,&apos;2.0.0&apos;);
+</code></pre><p>其中 <strong>xxxxxxxxxxxxx</strong> 为你的swiftypeKey，然后在站点配置文件_config.yml中添加：</p>
+<pre><code>swiftype_key: xxxxxxxxxxxxx
+</code></pre><p>另外需要注意的是，在进入搜索框 <strong>(search field)</strong> 一项时，主意将搜索框的ID改成NexT主题搜索框的ID <strong>#st-search-input</strong>，TYPE修改为 <strong>elementID</strong>，最后进入(<strong>activate</strong>)这一项，点击右下角的<strong>ACTIVATE SWIFTYPE</strong>按钮即可完成swiftype的所有配置了。</p>
+<h1 id="Google_u5B57_u4F53_u5E93_u4F18_u5316"><a href="#Google_u5B57_u4F53_u5E93_u4F18_u5316" class="headerlink" title="Google字体库优化"></a>Google字体库优化</h1><p>由于国内偶尔访问谷歌字体库非常慢，故使用360CDN替换, themes\next\layout_partials\head.swig</p>
+<p>将：</p>
+<pre><code>&lt;link href=&quot;//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&amp;subset=latin,latin-ext&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+</code></pre><p>替换为：</p>
+<pre><code>&lt;link href=&quot;//fonts.useso.com/css?family=Lato:300,400,700,400italic&amp;subset=latin,latin-ext&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+</code></pre>]]></content>
+    <summary type="html">
+    <![CDATA[<p>目前使用NexT.Pisces主题，优化过程比较零碎，也比较多，在此整理一下。</p>
+<h1 id="u83DC_u5355_u8BBE_u7F6E"><a href="#u83DC_u5355_u8BBE_u7F6E" class="headerlink" title="菜单设置"></a>菜单设置</h1><p>NexT主题菜单设置，用于设置博客上方导航栏，在主题配置文件中修改。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">menu:  </span><br><span class="line">  home: /                       #主页  </span><br><span class="line">  categories: /categories		#分类页（需手动创建）  </span><br><span class="line">  #about: /about				#关于页面（需手动创建）  </span><br><span class="line">  archives: /archives			#归档页  </span><br><span class="line">  tags: /tags					#标签页（需手动创建）  </span><br><span class="line">  #commonweal: /404.html        #公益 404 （需手动创建）</span><br></pre></td></tr></table></figure>]]>
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://gondole.github.io/tags/hexo/"/>
+    
+      <category term="hexo" scheme="http://gondole.github.io/categories/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hexo博客的多设备同步]]></title>
+    <link href="http://gondole.github.io/2016/01/22/Hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5/"/>
+    <id>http://gondole.github.io/2016/01/22/Hexo博客的多设备同步/</id>
+    <published>2016-01-22T06:32:35.000Z</published>
+    <updated>2016-01-29T08:30:03.852Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F01%2F27%2F24hrPQn.jpg" alt="流逝"></p>
+<p>在公司搭建了两天hexo博客，主题各种配置，发了几篇文章，回到家里想继续搞时发现搞不了…， GitHub上面存放的是hexo根据md生成的网页文件，于是搜索了一下怎么样在多设备上操作hexo博客，在公司弄完回家接着弄啊得。今天看到一种方法，试验了下，大概走通了，记录一下。</p>
+<p>博客的源文件主要在source文件夹里，所以需要把这个文件夹同步到云端，这里选择使用GitHub仓库来备份source文件夹。</p>
+<a id="more"></a>
+<h1 id="u5907_u4EFD_hexo/source"><a href="#u5907_u4EFD_hexo/source" class="headerlink" title="备份 hexo/source"></a>备份 hexo/source</h1><p>在你的Github里新建一个仓库，eg：hexoSource，创建完毕后在电脑上切换到你的hexo的source目录，执行如下命令进行上传：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">   git init	#初始化同步目录</span><br><span class="line">git remote add origin git@github.com:username/hexoSource.git</span><br><span class="line">git add .</span><br><span class="line">git commit -m "init hexo source "</span><br><span class="line">git pull origin master		#同步远程仓库文件</span><br><span class="line">git push -u origin master	#push到远程仓库</span><br></pre></td></tr></table></figure>
+<p>这样本地的source文件夹就备份到github上了，另外hexo下的_config.yml和theme下的主题（可能自定义配置的比较多）可以备份到网盘上面，在另外一台电脑上初始化好hexo之后可以直接覆盖。</p>
+<h1 id="u6062_u590D_hexo/source"><a href="#u6062_u590D_hexo/source" class="headerlink" title="恢复 hexo/source"></a>恢复 hexo/source</h1><p>在另外一台电脑上，首选按照搭建hexo博客的正常流程来进行各种配置：</p>
+<ol>
+<li>安装 Node.js</li>
+<li>安装 Git</li>
+<li>安装 Hexo</li>
+</ol>
+<p>最后执行完hexo初始化命令后，本地hexo文件夹下会有正常的source文件，此时切换到该目录，进行github上source备份文件的关联恢复，clone远程source仓库文件到本地</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone username<span class="annotation">@host</span>:/path/to/repository</span><br></pre></td></tr></table></figure>
+<p>clone完之后备份的远程source文件就到本地了，并且和git做了关联，接着就可以正常编辑博客文件了以及正常部署，记得下班时同步本地source文件到github上喔：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F01%2F27%2F24hrPQn.jpg" alt="流逝"></p>
+<p>在公司搭建了两天hexo博客，主题各种配置，发了几篇文章，回到家里想继续搞时发现搞不了…， GitHub上面存放的是hexo根据md生成的网页文件，于是搜索了一下怎么样在多设备上操作hexo博客，在公司弄完回家接着弄啊得。今天看到一种方法，试验了下，大概走通了，记录一下。</p>
+<p>博客的源文件主要在source文件夹里，所以需要把这个文件夹同步到云端，这里选择使用GitHub仓库来备份source文件夹。</p>]]>
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://gondole.github.io/tags/hexo/"/>
+    
+      <category term="hexo" scheme="http://gondole.github.io/categories/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hexo搭建GitHub博客]]></title>
+    <link href="http://gondole.github.io/2016/01/21/Hexo%E6%90%AD%E5%BB%BAGitHub%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://gondole.github.io/2016/01/21/Hexo搭建GitHub博客/</id>
+    <published>2016-01-21T08:29:12.000Z</published>
+    <updated>2016-04-08T09:58:15.196Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F03%2F24%2Fhexo.png" alt=""></p>
+<p>之前在csdn有一个博客，不过也没有写起来，只是当作一个在线笔记本来使用，记录收藏一些开发相关的知识。大概一年前看到一个网站，感觉网站样式很清爽简洁，看到下方有hexo强力驱动时才发现hexo这个玩意，但是放下没去了解，这两天心血来潮决定好好整整，简单按照网上的教程一步一步搭建了这个githubPage，这里也大概记录一下步骤吧，毕竟脑袋不如烂笔头好使……</p>
+<a id="more"></a>
+<h1 id="u73AF_u5883_u51C6_u5907"><a href="#u73AF_u5883_u51C6_u5907" class="headerlink" title="环境准备"></a>环境准备</h1><ul>
+<li><p>Node 安装: 在Node.js官网下载相应平台的最新版本，一路安装即可。</p>
+</li>
+<li><p>Git 安装: 可以选用msysgit，谷歌搜索至git官网，下载安装，设置环境变量以便全局使用, GIT_HOME, %GIT_HOME%\bin。</p>
+</li>
+<li><p>Sublime:支持MarkDown语法的强大编辑器，支持很多编程语言，支持语法高亮等很多特性。</p>
+</li>
+</ul>
+<h1 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h1><ul>
+<li>首先需要一个帐号</li>
+<li>建立一个与你用户名响应的仓库，仓库名为 your_user_name.github.com</li>
+<li>添加SSH公钥到Account settings -&gt; SSH Keys -&gt; Add SSH Key</li>
+</ul>
+<p>如何添加SSH Key ?</p>
+<p>首先设置用户名和密码：  </p>
+<pre><code>git config --global user.email &quot;你的github帐号&quot;
+git config --global user.name &quot;你的github用户名&quot;  
+</code></pre><p>生成密钥：  </p>
+<pre><code>ssh-keygen -t rsa -C &quot;github用户名&quot;  
+</code></pre><p>默认会在c盘.ssh文件夹下生成两个文件 id_rsa和id_rsa.pub，打开id_rsa.pub，拷贝其中的内容添加到Add SSH Key。</p>
+<p>最后验证：</p>
+<pre><code>ssh -T git@github.com
+</code></pre><p>验证时出现了一个问题：连接超时，22端口被禁用，于是更换ssh_config文件内容为：</p>
+<pre><code>Host github.com  
+Hostname ssh.github.com  
+Port 443
+</code></pre><h1 id="Hexo_u5B89_u88C5"><a href="#Hexo_u5B89_u88C5" class="headerlink" title="Hexo安装"></a>Hexo安装</h1><p>此时Node和Git都已经安装完毕，ssh也已经关联上，执行如下命令安装hexo：</p>
+<pre><code>npm install -g hexo
+</code></pre><h2 id="u521D_u59CB_u5316"><a href="#u521D_u59CB_u5316" class="headerlink" title="初始化"></a>初始化</h2><p>可以新建一个文件夹 eg：hexo，在此文件夹下执行命令：</p>
+<pre><code>hexo init
+</code></pre><p>将hexo初始化到该目录，到此时，安装工作执行完毕。</p>
+<h2 id="Hexo_u4F7F_u7528"><a href="#Hexo_u4F7F_u7528" class="headerlink" title="Hexo使用"></a>Hexo使用</h2><h2 id="u751F_u6210_u9759_u6001_u9875_u9762"><a href="#u751F_u6210_u9759_u6001_u9875_u9762" class="headerlink" title="生成静态页面"></a>生成静态页面</h2><p>cd到init初始化目录，执行如下命令，生成静态页面到hexo\public目录。</p>
+<pre><code>hexo generate
+</code></pre><p>或则缩写</p>
+<pre><code>hexo g
+</code></pre><h2 id="u5199_u6587_u7AE0"><a href="#u5199_u6587_u7AE0" class="headerlink" title="写文章"></a>写文章</h2><pre><code>hexo new &quot;postName&quot; #新建文章
+</code></pre><p>此时会在source下_posts文件夹下生成postName.md文件，打开即可进行编辑。</p>
+<h2 id="u90E8_u7F72"><a href="#u90E8_u7F72" class="headerlink" title="部署"></a>部署</h2><pre><code>hexo deploy
+</code></pre><p>或则缩写</p>
+<pre><code>hexo d
+</code></pre><p>有时会提示警告：ERROR Deployer not found: git<br>执行如下命令就可以安装deploy</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>此时打开username.github.com 即可预览你的站点啦。</p>
+<h1 id="u4E3B_u9898_u5B89_u88C5"><a href="#u4E3B_u9898_u5B89_u88C5" class="headerlink" title="主题安装"></a>主题安装</h1><pre><code>git clone https://github.com/iissnan/hexo-theme-next.git themes/next
+</code></pre><p>主题会克隆到themes下，打开hexo下的_config.yml，修改主题为next即可。</p>
+<pre><code>theme: next
+</code></pre><p>更新主题</p>
+<pre><code>cd themes/next
+git pull
+</code></pre><h1 id="u5206_u9875_u63D2_u4EF6"><a href="#u5206_u9875_u63D2_u4EF6" class="headerlink" title="分页插件"></a>分页插件</h1><p>在blog目录下的_config.yml站点配置文件末尾添加以下内容以设置分页参数</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># Plugins</span><br><span class="line">index_generator:</span><br><span class="line">  per_page: 10 ##首页默认10篇文章标题，如果值为0不分页</span><br><span class="line"></span><br><span class="line">archive_generator:</span><br><span class="line">  per_page: 10 ##归档页面默认10篇文章标题，如果值为0不分页</span><br><span class="line">  yearly: true ##生成年视图</span><br><span class="line">  monthly: true ##生成月视图</span><br><span class="line"></span><br><span class="line">tag_generator:</span><br><span class="line">  per_page: 10 ##标签页面默认10篇文章，如果值为0不分页</span><br><span class="line"></span><br><span class="line">category_generator: </span><br><span class="line">  per_page: 10 ##分类页面默认10篇文章，如果值为0不分页</span><br></pre></td></tr></table></figure>
+<h1 id="u6DFB_u52A0RSS"><a href="#u6DFB_u52A0RSS" class="headerlink" title="添加RSS"></a>添加RSS</h1><p>添加feed插件，一定记得加–save</p>
+<pre><code>npm install hexo-generator-feed --save
+</code></pre><p>插件安装完成后 在站点配置文件_config.yml 里添加  </p>
+<pre><code>plugins:  
+    - hexo-generator-feed
+</code></pre><p>在主题配置文件里添加  </p>
+<pre><code>rss: /atom.xml
+</code></pre><p>然后在执行 hexo g时就可以自动生成atom.xml文件了。</p>
+<h1 id="u6DFB_u52A0sitemap"><a href="#u6DFB_u52A0sitemap" class="headerlink" title="添加sitemap"></a>添加sitemap</h1><p>添加sitemap插件</p>
+<pre><code>npm install hexo-generator-sitemap
+</code></pre><p>开启sitemap功能：编辑hexo/_config.yml，添加如下代码：</p>
+<pre><code>plugins:
+    - hexo-generator-sitemap
+</code></pre><p>访问username/sitemap.xml即可看到站点地图。不过，sitemap的初衷是给搜索引擎看的，为了提高搜索引擎对自己站点的收录效果，我们最好手动到google和百度等搜索引擎提交sitemap.xml。</p>
+<h1 id="gulp_u63D2_u4EF6_u538B_u7F29"><a href="#gulp_u63D2_u4EF6_u538B_u7F29" class="headerlink" title="gulp插件压缩"></a>gulp插件压缩</h1><p>部署之前压缩生成的html文件，可以提高网页的加载速度。</p>
+<h2 id="u5B89_u88C5gulp_u76F8_u5173_u63D2_u4EF6"><a href="#u5B89_u88C5gulp_u76F8_u5173_u63D2_u4EF6" class="headerlink" title="安装gulp相关插件"></a>安装gulp相关插件</h2><pre><code>npm install gulp -g  
+npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean --save
+</code></pre><h2 id="u6267_u884C_gulp__u4EFB_u52A1"><a href="#u6267_u884C_gulp__u4EFB_u52A1" class="headerlink" title="执行 gulp 任务"></a>执行 gulp 任务</h2><p>安装完 gulp 插件后，需要在 package.json 同级目录下，新建 gulpfile.js。  </p>
+<p>文件保存后，当我们执行 hexo g &amp;&amp; gulp 时，gulp 会根据 gulpfile.js 中的配置，对 public 目录中的静态资源文件进行压缩。压缩完成后执行 hexo d 部署到 github / vps 中即可。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F03%2F24%2Fhexo.png" alt=""></p>
+<p>之前在csdn有一个博客，不过也没有写起来，只是当作一个在线笔记本来使用，记录收藏一些开发相关的知识。大概一年前看到一个网站，感觉网站样式很清爽简洁，看到下方有hexo强力驱动时才发现hexo这个玩意，但是放下没去了解，这两天心血来潮决定好好整整，简单按照网上的教程一步一步搭建了这个githubPage，这里也大概记录一下步骤吧，毕竟脑袋不如烂笔头好使……</p>]]>
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://gondole.github.io/tags/hexo/"/>
+    
+      <category term="hexo" scheme="http://gondole.github.io/categories/hexo/"/>
+    
+  </entry>
+  
+</feed>
