@@ -4,7 +4,7 @@
   <subtitle><![CDATA[镜花水月]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://gondole.github.io/"/>
-  <updated>2016-04-19T09:21:23.161Z</updated>
+  <updated>2016-04-19T09:22:11.945Z</updated>
   <id>http://gondole.github.io/</id>
   
   <author>
@@ -19,13 +19,14 @@
     <link href="http://gondole.github.io/2016/04/19/Android%E4%B9%8BGradle%E5%A4%9A%E6%B8%A0%E9%81%93%E6%89%93%E5%8C%85/"/>
     <id>http://gondole.github.io/2016/04/19/Android之Gradle多渠道打包/</id>
     <published>2016-04-19T08:39:41.000Z</published>
-    <updated>2016-04-19T09:21:23.161Z</updated>
+    <updated>2016-04-19T09:22:11.945Z</updated>
     <content type="html"><![CDATA[<p>Eclipse时代，结合ant也是可以进行多渠道打包的，可惜效率以及便捷性上面比现今的Gradle差了许多，Gradle通过可配置的方式来进行多渠道打包，可配置的元素有很多，例如：包名、资源、代码、版本号等等，灵活性很大，也很节省时间，常规方式默认打包构建时会生成各个渠道对应的代码和资源文件，然后逐个进行打包，这样子渠道报很多时也是相对费时间的，也很耗费电脑性能。此外有一些方案，比如美团之前提到的多渠道打包，首个APK完整构建后，其他的会根据首个构建好的APK进行资源和代码的替换来生成新的渠道包，以这种方式来操作，100个渠道包也不需要太多时间的，后续会对该种方式进行补充记录。</p>
 <p>下面记录一下实际操作用到的一些配置，打多渠道包一般分为两步：</p>
 <ul>
 <li>配置渠道</li>
 <li>配置渠道特有的信息</li>
 </ul>
+<a id="more"></a>
 <h2 id="u914D_u7F6E_u6E20_u9053"><a href="#u914D_u7F6E_u6E20_u9053" class="headerlink" title="配置渠道"></a>配置渠道</h2><p>在module的build.gradle进行各个渠道的声明：  </p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">   ...</span><br><span class="line">    productFlavors &#123;</span><br><span class="line">        wandoujia &#123;&#125;</span><br><span class="line">        qihu360 &#123;&#125;</span><br><span class="line">        baidu &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="u6E20_u9053_u7279_u6709_u4FE1_u606F_u914D_u7F6E"><a href="#u6E20_u9053_u7279_u6709_u4FE1_u606F_u914D_u7F6E" class="headerlink" title="渠道特有信息配置"></a>渠道特有信息配置</h2><p>eg.友盟的渠道配置一般写到manifest.xml里</p>
@@ -44,7 +45,13 @@
 <p>这样一来，多渠道打包就变得灵活很多。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Eclipse时代，结合ant也是可以进行多渠道打包的，可惜效率以及便捷性上面比现今的Gradle差了许多，Gradle通过可配置的方式来进行多渠道打包，可配置的元素有很多，例如：包名、资源、代码、版本号等等，灵活性很大，也很节省时间，常规方式默认打包构建时会生成各个渠道对]]>
+    <![CDATA[<p>Eclipse时代，结合ant也是可以进行多渠道打包的，可惜效率以及便捷性上面比现今的Gradle差了许多，Gradle通过可配置的方式来进行多渠道打包，可配置的元素有很多，例如：包名、资源、代码、版本号等等，灵活性很大，也很节省时间，常规方式默认打包构建时会生成各个渠道对应的代码和资源文件，然后逐个进行打包，这样子渠道报很多时也是相对费时间的，也很耗费电脑性能。此外有一些方案，比如美团之前提到的多渠道打包，首个APK完整构建后，其他的会根据首个构建好的APK进行资源和代码的替换来生成新的渠道包，以这种方式来操作，100个渠道包也不需要太多时间的，后续会对该种方式进行补充记录。</p>
+<p>下面记录一下实际操作用到的一些配置，打多渠道包一般分为两步：</p>
+<ul>
+<li>配置渠道</li>
+<li>配置渠道特有的信息</li>
+</ul>]]>
+    
     </summary>
     
       <category term="Android" scheme="http://gondole.github.io/tags/Android/"/>
