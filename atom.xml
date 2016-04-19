@@ -4,7 +4,7 @@
   <subtitle><![CDATA[镜花水月]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://gondole.github.io/"/>
-  <updated>2016-04-19T09:19:31.721Z</updated>
+  <updated>2016-04-19T09:21:23.161Z</updated>
   <id>http://gondole.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://gondole.github.io/2016/04/19/Android%E4%B9%8BGradle%E5%A4%9A%E6%B8%A0%E9%81%93%E6%89%93%E5%8C%85/"/>
     <id>http://gondole.github.io/2016/04/19/Android之Gradle多渠道打包/</id>
     <published>2016-04-19T08:39:41.000Z</published>
-    <updated>2016-04-19T09:19:31.721Z</updated>
+    <updated>2016-04-19T09:21:23.161Z</updated>
     <content type="html"><![CDATA[<p>Eclipse时代，结合ant也是可以进行多渠道打包的，可惜效率以及便捷性上面比现今的Gradle差了许多，Gradle通过可配置的方式来进行多渠道打包，可配置的元素有很多，例如：包名、资源、代码、版本号等等，灵活性很大，也很节省时间，常规方式默认打包构建时会生成各个渠道对应的代码和资源文件，然后逐个进行打包，这样子渠道报很多时也是相对费时间的，也很耗费电脑性能。此外有一些方案，比如美团之前提到的多渠道打包，首个APK完整构建后，其他的会根据首个构建好的APK进行资源和代码的替换来生成新的渠道包，以这种方式来操作，100个渠道包也不需要太多时间的，后续会对该种方式进行补充记录。</p>
 <p>下面记录一下实际操作用到的一些配置，打多渠道包一般分为两步：</p>
 <ul>
@@ -35,7 +35,7 @@
 <p>在flavor里可以定义的属性是和defaultConfig里支持的是一样的，defaultConfig可以声明配置的都可以进行各渠道的信息定制。</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">   defaultConfig &#123;</span><br><span class="line">       minSdkVersion <span class="number">8</span></span><br><span class="line">       targetSdkVersion <span class="number">22</span></span><br><span class="line">       versionCode <span class="number">10</span></span><br><span class="line">       versionName <span class="string">"3.0"</span></span><br><span class="line"></span><br><span class="line">       <span class="comment">// dex突破65535的限制</span></span><br><span class="line">       multiDexEnabled <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">       applicationId <span class="string">"com.cdel.chinaacc.exam.bank"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>另外如果有一些渠道有特有的逻辑代码和资源也是可以配置的。在src/main 这里，main表示程序构建默认使用的代码和资源，我们可以在main同级目录建立和渠道名相同名字的文件夹，eg.src/wandoujia，下面的子目录需要和main下的结构一样，比如：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">src/wandoujia</span><br><span class="line">		/assets</span><br><span class="line">		/res</span><br><span class="line">			/drawable</span><br><span class="line">			/drawable-xhdpi</span><br><span class="line">			/values</span><br><span class="line">				/strings.xml</span><br><span class="line">src/main</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">src/wandoujia</span><br><span class="line">	/assets</span><br><span class="line">	/res</span><br><span class="line">		/drawable</span><br><span class="line">		/drawable-xhdpi</span><br><span class="line">		/values</span><br><span class="line">			/strings.xml</span><br><span class="line">src/main</span><br></pre></td></tr></table></figure>
 <p>这样在多渠道打包自动构建时，相应的渠道会自动到相应目录下使用渠道包自己的代码和资源来进行打包，有几个原则是：</p>
 <ul>
 <li>代码和资源文件进行替换</li>
