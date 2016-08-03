@@ -4,7 +4,7 @@
   <subtitle><![CDATA[镜花水月]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://gondole.github.io/"/>
-  <updated>2016-04-20T01:08:13.156Z</updated>
+  <updated>2016-08-03T06:47:12.883Z</updated>
   <id>http://gondole.github.io/</id>
   
   <author>
@@ -13,6 +13,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[八月的太阳]]></title>
+    <link href="http://gondole.github.io/2016/08/03/%E5%85%AB%E6%9C%88%E7%9A%84%E5%A4%AA%E9%98%B3/"/>
+    <id>http://gondole.github.io/2016/08/03/八月的太阳/</id>
+    <published>2016-08-03T06:36:08.000Z</published>
+    <updated>2016-08-03T06:47:12.883Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016/08/03wallhaven-107764.jpg" alt=""></p>
+<p>太阳炙烤着大地，皮肤像脱了水似的，不如冬天。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016/08/03wallhaven-107764.jpg" alt=""></p>
+<p>太阳炙烤着大地，皮肤像脱了水似的，不如冬天。</p>
+]]>
+    </summary>
+    
+      <category term="随笔" scheme="http://gondole.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="随笔" scheme="http://gondole.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Android之Gradle漫游]]></title>
