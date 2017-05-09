@@ -4,7 +4,7 @@
   <subtitle><![CDATA[镜花水月]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://gondole.github.io/"/>
-  <updated>2016-04-20T01:08:13.156Z</updated>
+  <updated>2017-05-09T08:15:57.277Z</updated>
   <id>http://gondole.github.io/</id>
   
   <author>
@@ -15,11 +15,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[2017.05.09]]></title>
+    <link href="http://gondole.github.io/2017/05/09/2017-05-09/"/>
+    <id>http://gondole.github.io/2017/05/09/2017-05-09/</id>
+    <published>2017-05-09T08:14:30.000Z</published>
+    <updated>2017-05-09T08:15:57.277Z</updated>
+    <content type="html"><![CDATA[<h1 id="u65F6_u9694_u4E00_u5E74"><a href="#u65F6_u9694_u4E00_u5E74" class="headerlink" title="时隔一年"></a>时隔一年</h1>]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="u65F6_u9694_u4E00_u5E74"><a href="#u65F6_u9694_u4E00_u5E74" class="headerlink" title="时隔一年"></a>时隔一年</h1>]]>
+    </summary>
+    
+      <category term="生活" scheme="http://gondole.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="生活" scheme="http://gondole.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Android之Gradle漫游]]></title>
     <link href="http://gondole.github.io/2016/04/19/Android%E4%B9%8BGradle%E6%BC%AB%E6%B8%B8/"/>
     <id>http://gondole.github.io/2016/04/19/Android之Gradle漫游/</id>
     <published>2016-04-19T08:39:41.000Z</published>
-    <updated>2016-04-20T01:08:13.156Z</updated>
+    <updated>2016-08-06T08:15:39.082Z</updated>
     <content type="html"><![CDATA[<h1 id="u591A_u6E20_u9053_u6253_u5305"><a href="#u591A_u6E20_u9053_u6253_u5305" class="headerlink" title="多渠道打包"></a>多渠道打包</h1><p>Eclipse时代，结合ant也是可以进行多渠道打包的，可惜效率以及便捷性上面比现今的Gradle差了许多，Gradle通过可配置的方式来进行多渠道打包，可配置的元素有很多，例如：包名、资源、代码、版本号等等，灵活性很大，也很节省时间，常规方式默认打包构建时会生成各个渠道对应的代码和资源文件，然后逐个进行打包，这样子渠道很多时也是相对费时间的，也很耗费电脑性能。此外有一些方案，比如美团之前提到的多渠道打包，首个APK完整构建后，其他的会根据首个构建好的APK进行资源和代码的替换来生成新的渠道包，以这种方式来操作，100个渠道包也不需要太多时间的，后续会对该种方式进行补充记录。</p>
 <p>下面记录一下实际操作用到的一些配置，打多渠道包一般分为两步：</p>
 <ul>
@@ -47,8 +64,20 @@
 <p>在grade文件中配置，将会保存eclipse目录结构，当然，如果你有任何依赖的jar包，你需要告诉gradle它在哪儿，假设jar包会在一个叫做libs的文件夹内，那么你应该这么配置：</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dependencies &#123;</span><br><span class="line">       compile fileTree(<span class="string">dir:</span> <span class="string">'libs'</span>, <span class="string">include:</span> [<span class="string">'*.jar'</span>])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>该行意为：将libs文件夹中所有的jar文件视为依赖包。</p>
-<h2 id="Android-Gradle_DSL"><a href="#Android-Gradle_DSL" class="headerlink" title="Android-Gradle DSL"></a>Android-Gradle DSL</h2><p>defaultConfig{ } 默认配置，是ProductFlavor类型。它共享给其他ProductFlavor使用<br>sourceSets{ } 源文件目录设置，是AndroidSourceSet类型。<br>buildTypes{ } BuildType类型<br>signingConfigs{ } 签名配置，SigningConfig类型<br>productFlavors{ } 产品风格配置，ProductFlavor类型<br>testOptions{ } 测试配置，TestOptions类型<br>aaptOptions{ } aapt配置，AaptOptions类型<br>lintOptions{ } lint配置，LintOptions类型<br>dexOptions{ } dex配置，DexOptions类型<br>compileOptions{ } 编译配置，CompileOptions类型<br>packagingOptions{ } PackagingOptions类型<br>jacoco{ } JacocoExtension类型。 用于设定 jacoco版本<br>splits{ } Splits类型。 </p>
-]]></content>
+<h2 id="Android-Gradle_DSL"><a href="#Android-Gradle_DSL" class="headerlink" title="Android-Gradle DSL"></a>Android-Gradle DSL</h2><pre><code>defaultConfig{ } 默认配置，是ProductFlavor类型。它共享给其他ProductFlavor使用  
+sourceSets{ } 源文件目录设置，是AndroidSourceSet类型。  
+buildTypes{ } BuildType类型  
+signingConfigs{ } 签名配置，SigningConfig类型  
+productFlavors{ } 产品风格配置，ProductFlavor类型  
+testOptions{ } 测试配置，TestOptions类型  
+aaptOptions{ } aapt配置，AaptOptions类型  
+lintOptions{ } lint配置，LintOptions类型  
+dexOptions{ } dex配置，DexOptions类型  
+compileOptions{ } 编译配置，CompileOptions类型  
+packagingOptions{ } PackagingOptions类型  
+jacoco{ } JacocoExtension类型。 用于设定 jacoco版本  
+splits{ } Splits类型。 
+</code></pre>]]></content>
     <summary type="html">
     <![CDATA[<h1 id="u591A_u6E20_u9053_u6253_u5305"><a href="#u591A_u6E20_u9053_u6253_u5305" class="headerlink" title="多渠道打包"></a>多渠道打包</h1><p>Eclipse时代，结合ant也是可以进行多渠道打包的，可惜效率以及便捷性上面比现今的Gradle差了许多，Gradle通过可配置的方式来进行多渠道打包，可配置的元素有很多，例如：包名、资源、代码、版本号等等，灵活性很大，也很节省时间，常规方式默认打包构建时会生成各个渠道对应的代码和资源文件，然后逐个进行打包，这样子渠道很多时也是相对费时间的，也很耗费电脑性能。此外有一些方案，比如美团之前提到的多渠道打包，首个APK完整构建后，其他的会根据首个构建好的APK进行资源和代码的替换来生成新的渠道包，以这种方式来操作，100个渠道包也不需要太多时间的，后续会对该种方式进行补充记录。</p>
 <p>下面记录一下实际操作用到的一些配置，打多渠道包一般分为两步：</p>
@@ -172,41 +201,6 @@
       <category term="域名" scheme="http://gondole.github.io/tags/%E5%9F%9F%E5%90%8D/"/>
     
       <category term="技术" scheme="http://gondole.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Android需要关注的一些技术]]></title>
-    <link href="http://gondole.github.io/2016/01/25/Android%E9%9C%80%E8%A6%81%E5%85%B3%E6%B3%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%80%E6%9C%AF/"/>
-    <id>http://gondole.github.io/2016/01/25/Android需要关注的一些技术/</id>
-    <published>2016-01-25T03:59:59.000Z</published>
-    <updated>2016-02-26T00:40:01.840Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F02%2F26%2F1-XwEpgAyjpF0rGhEdUvm_mQ.jpeg" alt=""></p>
-<blockquote>
-<ol>
-<li>DataBinding</li>
-<li>MVP模式</li>
-<li>热修复</li>
-<li>插件化</li>
-<li>RxJava</li>
-<li>RxVolley</li>
-<li>RxBus, RxBinding</li>
-<li>Kotlin语言</li>
-</ol>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xqdqt.com1.z0.glb.clouddn.com/2016%2F02%2F26%2F1-XwEpgAyjpF0rGhEdUvm_mQ.jpeg" alt=""></p>
-<blockquote>
-<ol>
-<li>DataBin]]>
-    </summary>
-    
-      <category term="Android" scheme="http://gondole.github.io/tags/Android/"/>
-    
-      <category term="开源项目" scheme="http://gondole.github.io/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
-      <category term="Android" scheme="http://gondole.github.io/categories/Android/"/>
     
   </entry>
   
